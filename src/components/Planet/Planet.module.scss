@@ -1,0 +1,384 @@
+$color_1: white;
+$color_2: #9e9eace7;
+$font-family_1: 'Antonio', sans-serif;
+$background-color_1: transparent;
+$background-color_2: rgb(100, 100, 115);
+$background-color_3: rgb(180, 235, 235);
+$background-color_4: rgb(238, 175, 58);
+$background-color_5: blue;
+$background-color_6: red;
+$background-color_7: #c28561;
+$background-color_8: #efc064;
+$background-color_9: #5bbfa5;
+$background-color_10: #366ce8;
+
+.Planet {
+	.planetImageInformationView {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 100px;
+		.planetMobileView {
+			display: none;
+		}
+		.images {
+			margin-right: 7%;
+			position: relative;
+			.imgSurface {
+				width: 150px;
+				width: 9.3vw;
+				position: absolute;
+				top: 68%;
+				left: 33.5%;
+				display: none;
+			}
+			.showImageSurface {
+				display: block;
+			}
+		}
+		.imgMain {
+			margin-top: 1.5vw;
+			width: 28vw;
+		}
+		.planetInformationView {
+			margin-left: 7%;
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			.planetInformation {
+				h1 {
+					color: $color_1;
+					font-family: $font-family_1;
+					font-size: 70px;
+					margin-top: 0;
+					margin-bottom: 0;
+					text-transform: uppercase;
+				}
+				.planetDescription {
+					margin-top: 30px;
+					margin-bottom: 30px;
+					color: $color_1;
+					font-size: 14px;
+					line-height: 20px;
+				}
+				.sources {
+					color: $color_2;
+					font-size: 15px;
+					a {
+						color: $color_2;
+						font-weight: bold;
+						&:visited {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.planetView {
+				margin-top: 22px;
+				display: flex;
+				flex-direction: column;
+				.planetViewButton {
+					background-color: $background-color_1;
+					color: $color_1;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: left;
+					font-weight: bold;
+					font-size: 15px;
+					border: 1px solid rgb(100, 100, 115);
+					transition: transform .3s;
+					border-radius: 5px;
+					&:hover {
+						cursor: pointer;
+						background-color: $background-color_2;
+						transform: scale(1.02);
+					}
+					&:nth-child(2) {
+						margin-top: 20px;
+						margin-bottom: 20px;
+					}
+					span {
+						margin-left: 5%;
+						color: $color_2;
+					}
+					p {
+						margin-left: 5%;
+					}
+				}
+				.activeButtonMercury {
+					background-color: $background-color_3;
+					border: 1px solid rgb(180, 235, 235);
+					&:hover {
+						background-color: $background-color_3;
+					}
+				}
+				.activeButtonVenus {
+					background-color: $background-color_4;
+					border: 1px solid rgb(238, 175, 58);
+					&:hover {
+						background-color: $background-color_4;
+					}
+				}
+				.activeButtonEarth {
+					background-color: $background-color_5;
+					border: 1px solid blue;
+					&:hover {
+						background-color: $background-color_5;
+					}
+				}
+				.activeButtonMars {
+					background-color: $background-color_6;
+					border: 1px solid red;
+					&:hover {
+						background-color: $background-color_6;
+					}
+				}
+				.activeButtonJupiter {
+					background-color: $background-color_7;
+					border: 1px solid #c28561;
+					&:hover {
+						background-color: $background-color_7;
+					}
+				}
+				.activeButtonSaturn {
+					background-color: $background-color_8;
+					border: 1px solid #efc064;
+					&:hover {
+						background-color: $background-color_8;
+					}
+				}
+				.activeButtonUranus {
+					background-color: $background-color_9;
+					border: 1px solid #5bbfa5;
+					&:hover {
+						background-color: $background-color_9;
+					}
+				}
+				.activeButtonNeptune {
+					background-color: $background-color_10;
+					border: 1px solid #366ce8;
+					&:hover {
+						background-color: $background-color_10;
+					}
+				}
+			}
+		}
+	}
+	.planetStats {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		.stat {
+			width: 18%;
+			border: 1px solid rgb(100, 100, 115);
+			margin-left: 3%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			&:first-child {
+				margin-left: 0;
+			}
+			.statName {
+				color: $color_2;
+				margin-top: 25px;
+				margin-bottom: 15px;
+				text-align: left;
+				width: 80%;
+				font-size: 1vw;
+				font-weight: bold;
+			}
+			.statValue {
+				color: $color_1;
+				margin-top: 0;
+				margin-bottom: 25px;
+				text-align: left;
+				width: 80%;
+				font-family: $font-family_1;
+				font-size: 3vw;
+				font-weight: bold;
+			}
+		}
+	}
+}
+@media screen and (max-width: 915px) {
+	.Planet {
+		.planetImageInformationView {
+			margin-top: 50px;
+			flex-direction: column;
+			.images {
+				margin-right: 0;
+				.imgMain {
+					width: 250px;
+				}
+				.imgSurface {
+					width: 100px;
+					top: 60%;
+					left: 30.1%;
+				}
+			}
+			.planetInformationView {
+				flex-direction: row;
+				margin-top: 30px;
+				margin-left: 0;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+			}
+			.planetInformation {
+				width: 40%;
+				margin-right: 10%;
+			}
+			.planetView {
+				width: 40%;
+			}
+		}
+		.planetStats {
+			margin-top: 30px;
+			margin-bottom: 50px;
+			.stat {
+				.statName {
+					font-size: 1.3vw;
+				}
+				.statValue {
+					font-size: 3.3vw;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+	.Planet {
+		.planetImageInformationView {
+			margin-top: 0;
+			width: 100%;
+			.planetMobileView {
+				width: 100%;
+				display: block;
+				margin-bottom: 30px;
+				margin-bottom: 8vw;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				border-bottom: 1px solid #34344c;
+				.planetMobileViewButton {
+					height: 100%;
+					margin-left: 10vw;
+					background-color: $background-color_1;
+					border: 0;
+					cursor: pointer;
+					padding: 5px;
+					&:first-child {
+						margin-left: 0;
+					}
+					p {
+						font-size: 2.6vw;
+						font-weight: bold;
+						color: $color_2;
+						margin-left: 3vw;
+						margin-right: 3vw;
+					}
+				}
+				.activeButtonMercury {
+					border-bottom: 5px solid rgb(180, 235, 235);
+				}
+				.activeButtonVenus {
+					border-bottom: 5px solid rgb(238, 175, 58);
+				}
+				.activeButtonEarth {
+					border-bottom: 5px solid blue;
+				}
+				.activeButtonMars {
+					border-bottom: 5px solid red;
+				}
+				.activeButtonJupiter {
+					border-bottom: 5px solid #c28561;
+				}
+				.activeButtonSaturn {
+					border-bottom: 5px solid #efc064;
+				}
+				.activeButtonUranus {
+					border-bottom: 5px solid #5bbfa5;
+				}
+				.activeButtonNeptune {
+					border-bottom: 5px solid #366ce8;
+				}
+			}
+			.images {
+				.imgMain {
+					width: 30vw;
+				}
+				.imgSurface {
+					width: 15vw;
+					top: 16vw;
+					left: 7.6vw;
+				}
+			}
+			.planetInformationView {
+				display: initial;
+				margin-right: 0;
+				text-align: center;
+				width: 90%;
+				margin-top: 5vw;
+				.planetInformation {
+					h1 {
+						font-size: 10vw;
+					}
+					.planetDescription {
+						font-size: 2.5vw;
+						margin-top: 8px;
+						margin-bottom: 1vw;
+						line-height: 5vw;
+					}
+					.sources {
+						font-size: 3vw;
+						img {
+							width: 2.5vw;
+						}
+					}
+				}
+			}
+			.planetInformation {
+				width: 100%;
+				margin-right: 0;
+			}
+			.planetView {
+				display: none !important;
+			}
+		}
+		.planetStats {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 0vw;
+			margin-bottom: 4vw;
+			.stat {
+				margin-left: 0;
+				margin-top: 3vw;
+				width: 90%;
+				flex-direction: row;
+				height: 50px;
+				height: 12vw;
+				.statName {
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-left: 15px;
+					font-size: 2vw;
+				}
+				.statValue {
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-right: 15px;
+					text-align: right;
+				}
+			}
+		}
+	}
+}
