@@ -25,11 +25,10 @@ $background-color_10: #366ce8;
 		.images {
 			position: relative;
 			.imgSurface {
-        width: 9.3vw;
 				width: 150px;
 				position: absolute;
 				top: 68%;
-				left: 33.5%;
+				left: 31.2%;
 				display: none;
 			}
 			.showImageSurface {
@@ -38,7 +37,6 @@ $background-color_10: #366ce8;
 		}
 		.imgMain {
 			margin-top: 1.5vw;
-			width: 28vw;
       width: 400px;
 		}
 		.planetInformationView {
