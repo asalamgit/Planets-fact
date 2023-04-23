@@ -1,5 +1,96 @@
 .solarSystem{
-  h1{
-    color: white;
+.sun {
+  background-color: #FFD700; 
+}
+.earth {
+  background-color: #1E90FF;
+}
+.mars {
+  background-color: #FF4500; 
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.earth {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -12.5px;
+}
+
+.mars {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5px;
+}
+
+.earthOrbit {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  border: 1px dashed #1E90FF; 
+}
+
+.marsOrbit {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  border: 1px dashed #FF4500; 
+}
+
+.earthOrbit {
+  animation-name: rotate-earth;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-earth {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.marsOrbit {
+  animation-name: rotate-mars;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-mars {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 }
