@@ -78,43 +78,53 @@ li {
 	}
 	.Mars {
 		&:hover {
-			border-top: 7px solid red;
+			&::after {
+				background-color:  var(--marsColor);
+			}
 		}
 	}
 	.actualMars {
-		border-top: 7px solid red;
+		border-top: 7px solid  var(--marsColor);
 	}
 	.Jupiter {
 		&:hover {
-			border-top: 7px solid #c28561;
+			&::after {
+				background-color: var(--jupiterColor);
+			}
 		}
 	}
 	.actualJupiter {
-		border-top: 7px solid #c28561;
+		border-top: 7px solid var(--jupiterColor);
 	}
 	.Saturn {
 		&:hover {
-			border-top: 7px solid #efc064;
+			&::after {
+				background-color: var(--saturnColor);
+			}
 		}
 	}
 	.actualSaturn {
-		border-top: 7px solid #efc064;
+		border-top: 7px solid var(--saturnColor);
 	}
 	.Uranus {
 		&:hover {
-			border-top: 7px solid #5bbfa5;
+			&::after {
+				background-color: var(--uranusColor);
+			}
 		}
 	}
 	.actualUranus {
-		border-top: 7px solid #5bbfa5;
+		border-top: 7px solid var(--uranusColor);
 	}
 	.Neptune {
 		&:hover {
-			border-top: 7px solid #366ce8;
+			&::after {
+				background-color: var(--neptuneColor);
+			}
 		}
 	}
 	.actualNeptune {
-		border-top: 7px solid #366ce8;
+		border-top: 7px solid var(--neptuneColor);
 	}
 }
 @media screen and (min-width: 651px) and (max-width: 915px) {

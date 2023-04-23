@@ -121,38 +121,38 @@
 					}
 				}
 				.activeButtonMars {
-					background-color: var(--background-color_6);
-					border: 1px solid red;
+					background-color: var(--marsColor);
+					border: 1px solid  var(--marsColor);
 					&:hover {
-						background-color: var(--background-color_6);
+						background-color:  var(--marsColor);
 					}
 				}
 				.activeButtonJupiter {
-					background-color: var(--background-color_7);
-					border: 1px solid #c28561;
+					background-color: var(--jupiterColor);
+					border: 1px solid var(--jupiterColor);
 					&:hover {
-						background-color: var(--background-color_7);
+						background-color: var(--jupiterColor);
 					}
 				}
 				.activeButtonSaturn {
-					background-color: var(--background-color_8);
-					border: 1px solid #efc064;
+					background-color: var(--saturnColor);
+					border: 1px solid var(--saturnColor);
 					&:hover {
-						background-color: var(--background-color_8);
+						background-color: var(--saturnColor);
 					}
 				}
 				.activeButtonUranus {
-					background-color: var(--background-color_9);
-					border: 1px solid #5bbfa5;
+					background-color: var(--uranusColor);
+					border: 1px solid var(--uranusColor);
 					&:hover {
-						background-color: var(--background-color_9);
+						background-color: var(--uranusColor);
 					}
 				}
 				.activeButtonNeptune {
-					background-color: var(--background-color_10);
-					border: 1px solid #366ce8;
+					background-color: var(--neptuneColor);
+					border: 1px solid var(--neptuneColor);
 					&:hover {
-						background-color: var(--background-color_10);
+						background-color: var(--neptuneColor);
 					}
 				}
 			}
