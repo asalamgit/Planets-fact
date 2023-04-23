@@ -23,11 +23,7 @@ li {
 			padding-left: 10px;
 			width: 100%;
 			text-align: center;
-		}
-	}
 
-	li {
-		a {
 			&::after {
 				content: '';
 				position: absolute;

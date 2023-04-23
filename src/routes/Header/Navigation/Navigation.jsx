@@ -31,42 +31,42 @@ function Navigation() {
 		<>
 			<div className={classes.nav}>
 				<ul className={clsx(classes.Navigation, showLinks ? classes.showNav : classes.hideNav)}>
-					<NavigationItem className={classes.navigationMercury} planet="Mercury" to="/Mercury" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationMercury} planet="Mercury" to="/mercury" onSomeEvent={handleShowLinks}>
 						<img src={imgMercury} />
 						<span>MERCURY</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationVenus} planet="Venus" to="/Venus" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationVenus} planet="Venus" to="/venus" onSomeEvent={handleShowLinks}>
 						<img src={imgVenus} />
 						<span>VENUS</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationEarth} planet="Earth" to="/" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationEarth} planet="Earth" to="/earth" onSomeEvent={handleShowLinks}>
 						<img src={imgEarth} />
 						<span>EARTH</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationMars} planet="Mars" to="/Mars" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationMars} planet="Mars" to="/mars" onSomeEvent={handleShowLinks}>
 						<img src={imgMars} />
 						<span>MARS</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationJupiter} planet="Jupiter" to="/Jupiter" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationJupiter} planet="Jupiter" to="/jupiter" onSomeEvent={handleShowLinks}>
 						<img src={imgJupiter} />
 						<span>JUPITER</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationSaturn} planet="Saturn" to="/Saturn" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationSaturn} planet="Saturn" to="/saturn" onSomeEvent={handleShowLinks}>
 						<img src={imgSaturn} />
 						<span>SATURN</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationUranus} planet="Uranus" to="/Uranus" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationUranus} planet="Uranus" to="/uranus" onSomeEvent={handleShowLinks}>
 						<img src={imgUranus} />
 						<span>URANUS</span>
 						<p>&gt;</p>
 					</NavigationItem>
-					<NavigationItem className={classes.navigationNeptune} planet="Neptune" to="/Neptune" onSomeEvent={handleShowLinks}>
+					<NavigationItem className={classes.navigationNeptune} planet="Neptune" to="/neptune" onSomeEvent={handleShowLinks}>
 						<img src={imgNeptune} />
 						<span>NEPTUNE</span>
 						<p>&gt;</p>
