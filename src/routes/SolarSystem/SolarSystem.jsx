@@ -21,7 +21,7 @@ const SolarSystem = () => {
 					<img src={planetMercury} className={clsx(classes.planet, classes.mercury)} alt="mercury" />
 				</div>
 			</Link>
-			<Link to="/venus">
+			{/* <Link to="/venus">
 				<div className={clsx(classes.planetOrbit, classes.venusOrbit)}>
 					<img src={planetVenus} className={clsx(classes.planet,classes.venus)} alt="venus" />
 				</div>
@@ -34,6 +34,21 @@ const SolarSystem = () => {
 			<Link to="/mars">
 				<div className={clsx(classes.planetOrbit,classes.marsOrbit)}>
           <img src={planetMars} className={clsx(classes.planet,classes.mars)} alt="mars" />
+				</div>
+			</Link>
+      <Link to="/jupiter">
+				<div className={clsx(classes.planetOrbit,classes.jupiterOrbit)}>
+          <img src={planetJupiter} className={clsx(classes.planet,classes.jupiter)} alt="jupiter" />
+				</div>
+			</Link>
+      <Link to="/saturn">
+				<div className={clsx(classes.planetOrbit,classes.saturnOrbit)}>
+          <img src={planetSaturn} className={clsx(classes.planet,classes.saturn)} alt="saturn" />
+				</div>
+			</Link> */}
+      <Link to="/uranus">
+				<div className={clsx(classes.planetOrbit,classes.uranusOrbit)}>
+          <img src={planetUranus} className={clsx(classes.planet,classes.uranus)} alt="uranus" />
 				</div>
 			</Link>
 		</div>
