@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classes from './NavigationItem.module.scss';
-// import { useState } from 'react';
 import clsx from 'clsx';
-// import Navigation from '../Navigation';
 
 function NavigationItem(props) {
 	function whichPlanet(planet) {
@@ -24,7 +22,7 @@ function NavigationItem(props) {
 		planet = planet.toLowerCase();
 		if (planet === 'mercury' && planet === actualPlanet) return classes.actualMercury;
 		if (planet === 'venus' && planet === actualPlanet) return classes.actualVenus;
-		if (planet === 'earth' && actualPlanet === '') return classes.actualEarth;
+		if (planet === 'earth' && planet === actualPlanet) return classes.actualEarth;
 		if (planet === 'mars' && planet === actualPlanet) return classes.actualMars;
 		if (planet === 'jupiter' && planet === actualPlanet) return classes.actualJupiter;
 		if (planet === 'saturn' && planet === actualPlanet) return classes.actualSaturn;

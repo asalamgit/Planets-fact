@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import Header from './routes/Header/Header';
 import Mercury from './routes/Mercury/Mercury';
 import Venus from './routes/Venus/Venus';
 import Earth from './routes/Earth/Earth';
@@ -8,13 +9,13 @@ import Jupiter from './routes/Jupiter/Jupiter';
 import Saturn from './routes/Saturn/Saturn';
 import Uranus from './routes/Uranus/Uranus';
 import Neptune from './routes/Neptune/Neptune';
-import Header from './routes/Header/Header';
+import SolarSystem from './routes/SolarSystem/SolarSystem';
 
 function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<Header />}>
-				<Route index element={<h1>home</h1>} />
+				<Route index element={<SolarSystem />} />
 				<Route path="mercury" element={<Mercury />} />
 				<Route path="venus" element={<Venus />} />
 				<Route path="earth" element={<Earth />} />

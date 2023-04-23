@@ -10,6 +10,10 @@
 	h1 {
 		font-family: var(--font-family_1);
 		font-size: 30px;
+		.link {
+			color: white;
+			text-decoration: none;
+		}
 	}
 }
 @media screen and (min-width: 916px) {

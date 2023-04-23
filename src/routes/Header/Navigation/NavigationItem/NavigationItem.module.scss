@@ -124,82 +124,104 @@ li {
 	}
 }
 @media screen and (min-width: 651px) and (max-width: 915px) {
+
 	li {
 		margin-right: 1vw;
 		padding-bottom: 40px;
 		width: 100%;
+		position: relative;
+		margin-left: 10px;
+		margin-right: 10px;
+	
 		a {
 			padding-top: 20px;
 			padding-bottom: 21.5px;
-			padding-right: 10px;
-			padding-left: 10px;
 			width: 100%;
 			text-align: center;
+			border-bottom: 2px solid transparent;
+			position: relative;
+	
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: -7px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0%;
+				height: 7px;
+				transition: width 0.3s ease-in-out;
+				
+			}
+	
+			&:hover:before {
+				width: 100%;
+			}
 		}
 	}
+	
 	.Mercury {
-		&:hover {
-			border-bottom: 7px solid var(--mercuryColor);
+		&:hover:before {
+			background-color: var(--mercuryColor);
 		}
 	}
 	.actualMercury {
 		border-bottom: 7px solid var(--mercuryColor);
 	}
 	.Venus {
-		&:hover {
-			border-bottom: 7px solid rgb(238, 175, 58);
+		&:hover:before {
+			background-color: var(--venusColor);
 		}
 	}
 	.actualVenus {
-		border-bottom: 7px solid rgb(238, 175, 58);
+		border-bottom: 7px solid var(--venusColor);
 	}
 	.Earth {
-		&:hover {
-			border-bottom: 7px solid blue;
+		&:hover:before {
+			background-color: var(--earthColor);
 		}
 	}
 	.actualEarth {
-		border-bottom: 7px solid blue;
+		border-bottom: 7px solid var(--earthColor);
 	}
 	.Mars {
-		&:hover {
-			border-bottom: 7px solid red;
+		&:hover:before {
+			background-color: var(--marsColor);
 		}
 	}
 	.actualMars {
-		border-bottom: 7px solid red;
+		border-bottom: 7px solid var(--marsColor);
 	}
 	.Jupiter {
-		&:hover {
-			border-bottom: 7px solid #c28561;
+		&:hover:before {
+			background-color: var(--jupiterColor);
 		}
 	}
 	.actualJupiter {
-		border-bottom: 7px solid #c28561;
+		border-bottom: 7px solid var(--jupiterColor);
 	}
 	.Saturn {
-		&:hover {
-			border-bottom: 7px solid #efc064;
+		&:hover:before {
+			background-color: var(--saturnColor);
 		}
 	}
 	.actualSaturn {
-		border-bottom: 7px solid #efc064;
+		border-bottom: 7px solid var(--saturnColor);
 	}
 	.Uranus {
-		&:hover {
-			border-bottom: 7px solid #5bbfa5;
+		&:hover:before {
+			background-color: var(--uranusColor);
 		}
 	}
 	.actualUranus {
-		border-bottom: 7px solid #5bbfa5;
+		border-bottom: 7px solid var(--uranusColor);
 	}
 	.Neptune {
-		&:hover {
-			border-bottom: 7px solid #366ce8;
+		&:hover:before {
+			background-color: var(--neptuneColor);
 		}
 	}
 	.actualNeptune {
-		border-bottom: 7px solid #366ce8;
+		border-bottom: 7px solid var(--neptuneColor);
 	}
 }
 @media screen and (max-width: 650px) {

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Header.module.scss';
 import Navigation from './Navigation/Navigation';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 function Header() {
+	const [refresh, setRefresh] = useState(0);
+
 	return (
 		<>
 			<div className={classes.Header}>
-				<h1>THE PLANETS</h1>
+				<h1>
+					<Link
+						className={classes.link}
+						to="/"
+						onClick={() => {
+							setRefresh(refresh + 1);
+						}}
+					>
+						THE PLANETS
+					</Link>
+				</h1>
 				<Navigation />
 			</div>
 			<Outlet />
