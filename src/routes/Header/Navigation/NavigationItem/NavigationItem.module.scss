@@ -1,0 +1,212 @@
+$color_1: rgba(255, 255, 255, 0.75);
+$color_2: rgba(255, 255, 255, 1);
+
+li {
+	margin-right: 25px;
+	a {
+		text-decoration: none;
+		color: $color_1;
+		font-weight: bold;
+		font-size: 12px;
+		&:hover {
+			color: $color_2;
+		}
+	}
+}
+
+@media screen and (min-width: 916px) {
+	li {
+		margin-right: 1vw;
+		padding-top: 40px;
+		position: relative;
+		a {
+			padding-top: 37px;
+			padding-bottom: 33px;
+			padding-right: 10px;
+			padding-left: 10px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	li {
+		a {
+			&::after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0%;
+				height: 7px;
+				transition: width 0.3s ease-in-out;
+			}
+			&:hover {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	.Mercury {
+		&:hover {
+			&::after{
+				background-color: rgb(180, 235, 235);
+			}
+		}
+	}
+	.actualMercury {
+		border-top: 7px solid rgb(180, 235, 235);
+	}
+	.Venus {
+		&:hover {
+			border-top: 7px solid rgb(238, 175, 58);
+		}
+	}
+	.actualVenus {
+		border-top: 7px solid rgb(238, 175, 58);
+	}
+	.Earth {
+		&:hover {
+			border-top: 7px solid blue;
+		}
+	}
+	.actualEarth {
+		border-top: 7px solid blue;
+	}
+	.Mars {
+		&:hover {
+			border-top: 7px solid red;
+		}
+	}
+	.actualMars {
+		border-top: 7px solid red;
+	}
+	.Jupiter {
+		&:hover {
+			border-top: 7px solid #c28561;
+		}
+	}
+	.actualJupiter {
+		border-top: 7px solid #c28561;
+	}
+	.Saturn {
+		&:hover {
+			border-top: 7px solid #efc064;
+		}
+	}
+	.actualSaturn {
+		border-top: 7px solid #efc064;
+	}
+	.Uranus {
+		&:hover {
+			border-top: 7px solid #5bbfa5;
+		}
+	}
+	.actualUranus {
+		border-top: 7px solid #5bbfa5;
+	}
+	.Neptune {
+		&:hover {
+			border-top: 7px solid #366ce8;
+		}
+	}
+	.actualNeptune {
+		border-top: 7px solid #366ce8;
+	}
+}
+@media screen and (min-width: 651px) and (max-width: 915px) {
+	li {
+		margin-right: 1vw;
+		padding-bottom: 40px;
+		width: 100%;
+		a {
+			padding-top: 20px;
+			padding-bottom: 21.5px;
+			padding-right: 10px;
+			padding-left: 10px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.Mercury {
+		&:hover {
+			border-bottom: 7px solid rgb(180, 235, 235);
+		}
+	}
+	.actualMercury {
+		border-bottom: 7px solid rgb(180, 235, 235);
+	}
+	.Venus {
+		&:hover {
+			border-bottom: 7px solid rgb(238, 175, 58);
+		}
+	}
+	.actualVenus {
+		border-bottom: 7px solid rgb(238, 175, 58);
+	}
+	.Earth {
+		&:hover {
+			border-bottom: 7px solid blue;
+		}
+	}
+	.actualEarth {
+		border-bottom: 7px solid blue;
+	}
+	.Mars {
+		&:hover {
+			border-bottom: 7px solid red;
+		}
+	}
+	.actualMars {
+		border-bottom: 7px solid red;
+	}
+	.Jupiter {
+		&:hover {
+			border-bottom: 7px solid #c28561;
+		}
+	}
+	.actualJupiter {
+		border-bottom: 7px solid #c28561;
+	}
+	.Saturn {
+		&:hover {
+			border-bottom: 7px solid #efc064;
+		}
+	}
+	.actualSaturn {
+		border-bottom: 7px solid #efc064;
+	}
+	.Uranus {
+		&:hover {
+			border-bottom: 7px solid #5bbfa5;
+		}
+	}
+	.actualUranus {
+		border-bottom: 7px solid #5bbfa5;
+	}
+	.Neptune {
+		&:hover {
+			border-bottom: 7px solid #366ce8;
+		}
+	}
+	.actualNeptune {
+		border-bottom: 7px solid #366ce8;
+	}
+}
+@media screen and (max-width: 650px) {
+	li {
+		height: 15vw;
+		height: 12.5vw;
+		a {
+			display: block;
+			font-size: 3vw;
+			&:hover {
+				p {
+					color: $color_2;
+				}
+			}
+		}
+	}
+}

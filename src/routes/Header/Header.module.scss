@@ -1,0 +1,60 @@
+$color_1: white;
+$font-family_1: 'Antonio', sans-serif;
+
+.Header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-bottom: 0.01cm solid #34344c;
+	color: $color_1;
+	h1 {
+		font-family: $font-family_1;
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 916px) {
+	.Header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-left: 30px;
+		padding-right: 30px;
+		border-bottom: 0.01cm solid #34344c;
+		color: $color_1;
+		h1 {
+			font-family: $font-family_1;
+			font-size: 30px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+@media screen and (max-width: 915px) {
+	.Header {
+		flex-direction: column;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 5px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.Header {
+		padding-left: 5%;
+		padding-right: 30px;
+		padding-bottom: 0px;
+		h1 {
+			width: 100%;
+			margin-top: 1.5rem;
+			margin-top: 3.75vw;
+			margin-left: 6px;
+			margin-left: 1vw;
+			padding-bottom: 0px;
+			text-align: left;
+			font-size: 7vw;
+		}
+	}
+}
