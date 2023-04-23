@@ -83,7 +83,7 @@ function Planet(props) {
 						<p className={classes.planetDescription}>{ftChooseDescription(informationType)}</p>
 						<p className={classes.sources}>
 							Source :{' '}
-							<a className={classes.planetWikipedia} href={ftChooseWikipedia(informationType)}>
+							<a className={classes.planetWikipedia} href={ftChooseWikipedia(informationType)} target="_blank" rel="noreferrer" >
 								Wikipedia
 								<img src={imgSource} />
 							</a>
