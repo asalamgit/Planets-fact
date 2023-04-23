@@ -1,96 +1,84 @@
-.solarSystem{
-.sun {
-  background-color: #FFD700; 
-}
-.earth {
-  background-color: #1E90FF;
-}
-.mars {
-  background-color: #FF4500; 
-}
+.solarSystem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-.sun {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-}
+	.sun {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -50px;
+		margin-top: -50px;
+	}
 
-.earth {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-left: -12.5px;
-}
+	.earth {
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		left: 73%;
+		margin-left: -10px;
+	}
 
-.mars {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-left: -7.5px;
-}
+	.mars {
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		left: 73%;
+		margin-left: -7.5px;
+	}
 
-.earthOrbit {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -100px;
-  margin-top: -100px;
-  border: 1px dashed #1E90FF; 
-}
+	.earthOrbit {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -100px;
+		margin-top: -100px;
+		border: 1px solid rgba(102, 166, 229, 0.12);
+		z-index: 10;
 
-.marsOrbit {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  border: 1px dashed #FF4500; 
-}
+		animation-name: rotate-planet;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 
-.earthOrbit {
-  animation-name: rotate-earth;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+		&:hover {
+			border: 1px solid var(--earthColor);
+		}
+	}
 
-@keyframes rotate-earth {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+	.marsOrbit {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+		margin-top: -150px;
+		border: 1px solid rgba(102, 166, 229, 0.12);
+		z-index: 9;
 
-.marsOrbit {
-  animation-name: rotate-mars;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+		animation-name: rotate-planet;
+		animation-duration: 20s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
 
-@keyframes rotate-mars {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+		&:hover {
+			border: 1px solid var(--marsColor);
+		}
+	}
+
+	@keyframes rotate-planet {
+		from {
+			transform: rotate(360deg);
+		}
+		to {
+			transform: rotate(0deg);
+		}
+	}
 }
