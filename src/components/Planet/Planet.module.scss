@@ -100,24 +100,24 @@
 					}
 				}
 				.activeButtonMercury {
-					background-color: var(--background-color_3);
-					border: 1px solid rgb(180, 235, 235);
+					background-color: var(--mercuryColor);
+					border: 1px solid var(--mercuryColor);
 					&:hover {
-						background-color: var(--background-color_3);
+						background-color: var(--mercuryColor);
 					}
 				}
 				.activeButtonVenus {
-					background-color: var(--background-color_4);
-					border: 1px solid rgb(238, 175, 58);
+					background-color: var(--venusColor);
+					border: 1px solid  var(--venusColor);
 					&:hover {
-						background-color: var(--background-color_4);
+						background-color:  var(--venusColor);
 					}
 				}
 				.activeButtonEarth {
-					background-color: var(--background-color_5);
-					border: 1px solid blue;
+					background-color: var(--earthColor);
+					border: 1px solid var(--earthColor);
 					&:hover {
-						background-color: var(--background-color_5);
+						background-color: var(--earthColor);
 					}
 				}
 				.activeButtonMars {
