@@ -1,10 +1,6 @@
 .solarSystem {
-  margin-top: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	position: relative;
-	min-height: 100vh;
+	height: 800px;
 
 	.sun {
 		width: 100px;
@@ -53,16 +49,15 @@
 			animation-duration: 15s;
 		}
 
-    @keyframes rotate-mercury {
-      from {
-        transform: rotate(0deg) translateX(82px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(82px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-mercury {
+			from {
+				transform: rotate(0deg) translateX(82px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(82px) rotate(360deg);
+			}
+		}
 	}
-
 
 	.venusOrbit {
 		width: 225px;
@@ -82,16 +77,15 @@
 			animation-duration: 17s;
 		}
 
-    @keyframes rotate-venus {
-      from {
-        transform: rotate(0deg) translateX(112.5px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(112.5px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-venus {
+			from {
+				transform: rotate(0deg) translateX(112.5px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(112.5px) rotate(360deg);
+			}
+		}
 	}
-
 
 	.earthOrbit {
 		width: 300px;
@@ -111,16 +105,15 @@
 			animation-duration: 19s;
 		}
 
-    @keyframes rotate-earth {
-      from {
-        transform: rotate(0deg) translateX(150px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(150px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-earth {
+			from {
+				transform: rotate(0deg) translateX(150px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(150px) rotate(360deg);
+			}
+		}
 	}
-
 
 	.marsOrbit {
 		width: 375px;
@@ -168,14 +161,14 @@
 			animation-duration: 23s;
 		}
 
-    @keyframes rotate-jupiter {
-      from {
-        transform: rotate(0deg) translateX(232.5px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(232.5px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-jupiter {
+			from {
+				transform: rotate(0deg) translateX(232.5px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(232.5px) rotate(360deg);
+			}
+		}
 	}
 
 	.saturnOrbit {
@@ -196,17 +189,17 @@
 			animation-duration: 25s;
 		}
 
-    @keyframes rotate-saturn {
-      from {
-        transform: rotate(0deg) translateX(277.5px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(277.5px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-saturn {
+			from {
+				transform: rotate(0deg) translateX(277.5px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(277.5px) rotate(360deg);
+			}
+		}
 	}
 
-  .uranusOrbit {
+	.uranusOrbit {
 		width: 640px;
 		height: 640px;
 		z-index: 4;
@@ -224,17 +217,17 @@
 			animation-duration: 27s;
 		}
 
-    @keyframes rotate-uranus {
-      from {
-        transform: rotate(0deg) translateX(320px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(320px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-uranus {
+			from {
+				transform: rotate(0deg) translateX(320px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(320px) rotate(360deg);
+			}
+		}
 	}
 
-  .neptuneOrbit {
+	.neptuneOrbit {
 		width: 720px;
 		height: 720px;
 		z-index: 3;
@@ -252,13 +245,195 @@
 			animation-duration: 29s;
 		}
 
-    @keyframes rotate-neptune {
-      from {
-        transform: rotate(0deg) translateX(360px) rotate(0deg);
-      }
-      to {
-        transform: rotate(-360deg) translateX(360px) rotate(360deg);
-      }
-    }
+		@keyframes rotate-neptune {
+			from {
+				transform: rotate(0deg) translateX(360px) rotate(0deg);
+			}
+			to {
+				transform: rotate(-360deg) translateX(360px) rotate(360deg);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.solarSystem {
+		height: 105vw;
+
+		.sun {
+			width: 10vw;
+			height: 10vw;
+			margin-left: -5vw;
+			margin-top: -5vw;
+			box-shadow: 0 0 1.33vw 0.67vw #9c8819;
+		}
+
+		.mercuryOrbit {
+			width: 18vw;
+			height: 18vw;
+
+			.mercury {
+				width: 2.67vw;
+				height: 2.67vw;
+				margin-top: -1.33vw;
+				margin-left: -1.33vw;
+			}
+
+			@keyframes rotate-mercury {
+				from {
+					transform: rotate(0deg) translateX(9vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(9vw) rotate(360deg);
+				}
+			}
+		}
+
+		.venusOrbit {
+			width: 26vw;
+			height: 26vw;
+
+			.venus {
+				width: 2.92vw;
+				height: 2.92vw;
+				margin-top: -1.46vw;
+				margin-left: -1.46vw;
+			}
+
+			@keyframes rotate-venus {
+				from {
+					transform: rotate(0deg) translateX(13vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(13vw) rotate(360deg);
+				}
+			}
+		}
+
+		.earthOrbit {
+			width: 35vw;
+			height: 35vw;
+
+			.earth {
+				width: 3.33vw;
+				height: 3.33vw;
+				margin-top: -1.67vw;
+				margin-left: -1.67vw;
+			}
+
+			@keyframes rotate-earth {
+				from {
+					transform: rotate(0deg) translateX(17.5vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(17.5vw) rotate(360deg);
+				}
+			}
+		}
+
+    .marsOrbit {
+			width: 44vw;
+			height: 44vw;
+
+			.mars {
+				width: 2.8vw;
+				height: 2.8vw;
+				margin-top: -1.67vw;
+				margin-left: -1.67vw;
+			}
+
+			@keyframes rotate-mars {
+				from {
+					transform: rotate(0deg) translateX(22vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(22vw) rotate(360deg);
+				}
+			}
+		}
+
+    .jupiterOrbit {
+			width: 56vw;
+			height: 56vw;
+
+			.jupiter {
+				width: 5vw;
+				height: 5vw;
+				margin-top: -2.5vw;
+				margin-left: -2.5vw;
+			}
+
+			@keyframes rotate-jupiter {
+				from {
+					transform: rotate(0deg) translateX(28vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(28vw) rotate(360deg);
+				}
+			}
+		}
+
+    .saturnOrbit {
+			width: 70vw;
+			height: 70vw;
+
+			.saturn {
+				width: 6.3vw;
+				height: 6.3vw;
+				margin-top: -3.15vw;
+				margin-left: -3.15vw;
+			}
+
+			@keyframes rotate-saturn {
+				from {
+					transform: rotate(0deg) translateX(35vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(35vw) rotate(360deg);
+				}
+			}
+		}
+
+    .uranusOrbit {
+			width: 82.5vw;
+			height: 82.5vw;
+
+			.uranus {
+				width: 3.8vw;
+				height: 3.8vw;
+				margin-top: -1.9vw;
+				margin-left: -1.9vw;
+			}
+
+			@keyframes rotate-uranus {
+				from {
+					transform: rotate(0deg) translateX(41.5vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(41.5vw) rotate(360deg);
+				}
+			}
+		}
+
+    .neptuneOrbit {
+			width: 93vw;
+			height: 93vw;
+
+			.neptune {
+				width: 3.7vw;
+				height: 3.7vw;
+				margin-top: -1.85vw;
+				margin-left: -1.85vw;
+			}
+
+			@keyframes rotate-neptune {
+				from {
+					transform: rotate(0deg) translateX(46.5vw) rotate(0deg);
+				}
+				to {
+					transform: rotate(-360deg) translateX(46.5vw) rotate(360deg);
+				}
+			}
+		}
 	}
 }
