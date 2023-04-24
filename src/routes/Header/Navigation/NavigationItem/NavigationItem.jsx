@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import classes from './NavigationItem.module.scss';
 import clsx from 'clsx';
 
 function NavigationItem(props) {
+	const location = useLocation();
+
 	function whichPlanet(planet) {
 		if (planet === 'Mercury') return classes.Mercury;
 		if (planet === 'Venus') return classes.Venus;

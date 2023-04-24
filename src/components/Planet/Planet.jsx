@@ -73,8 +73,8 @@ function Planet(props) {
 				</div>
 
 				<div className={classes.images}>
-					<img className={classes.imgMain} src={ftChooseImage(informationType)} />
-					<img className={clsx(classes.imgSurface, ftIfImageSurfaceVisible(informationType))} src={props.planetImageSurface} />
+					<img className={classes.imgMain} alt={props.planetName} src={ftChooseImage(informationType)} />
+					<img className={clsx(classes.imgSurface, ftIfImageSurfaceVisible(informationType))} alt="internal structure" src={props.planetImageSurface} />
 				</div>
 
 				<div className={classes.planetInformationView}>
@@ -85,7 +85,7 @@ function Planet(props) {
 							Source :{' '}
 							<a className={classes.planetWikipedia} href={ftChooseWikipedia(informationType)} target="_blank" rel="noreferrer" >
 								Wikipedia
-								<img src={imgSource} />
+								<img src={imgSource} alt="wikipedia" />
 							</a>
 						</p>
 					</div>
