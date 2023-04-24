@@ -5,6 +5,11 @@ import { Link, Outlet } from 'react-router-dom';
 
 function Header() {
 	const [refresh, setRefresh] = useState(0);
+	const [showLinks, setShowLinks] = useState(false);
+
+	const handleShowLinks = () => {
+		showLinks && setShowLinks(!showLinks);
+	};
 
 	return (
 		<>
@@ -15,12 +20,13 @@ function Header() {
 						to="/"
 						onClick={() => {
 							setRefresh(refresh + 1);
+							handleShowLinks();
 						}}
 					>
 						THE PLANETS
 					</Link>
 				</h1>
-				<Navigation />
+				<Navigation showLinks={showLinks} setShowLinks={setShowLinks} />
 			</div>
 			<Outlet />
 		</>

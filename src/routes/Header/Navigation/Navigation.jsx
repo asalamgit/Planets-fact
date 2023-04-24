@@ -14,14 +14,14 @@ import imgNeptune from '../../../assets/planet-neptune.svg';
 import $ from 'jquery';
 import NavigationItem from './NavigationItem/NavigationItem.jsx';
 
-function Navigation() {
-	const [showLinks, setShowLinks] = useState(false);
+function Navigation(props) {
+	// const [showLinks, setShowLinks] = useState(false);
 
 	const handleShowLinks = () => {
-		setShowLinks(!showLinks);
+		props.setShowLinks(!props.showLinks);
 	};
 
-	if (showLinks === true && window.innerWidth < 650.01) {
+	if (props.showLinks === true && window.innerWidth < 650.01) {
 		$('body').css('overflow-y', 'hidden');
 	} else {
 		$('body').css('overflow-y', 'visible');
@@ -30,7 +30,7 @@ function Navigation() {
 	return (
 		<>
 			<div className={classes.nav}>
-				<ul className={clsx(classes.Navigation, showLinks ? classes.showNav : classes.hideNav)}>
+				<ul className={clsx(classes.Navigation, props.showLinks ? classes.showNav : classes.hideNav)}>
 					<NavigationItem className={classes.navigationMercury} planet="Mercury" to="/mercury" onSomeEvent={handleShowLinks}>
 						<img src={imgMercury} />
 						<span>MERCURY</span>
@@ -72,7 +72,7 @@ function Navigation() {
 						<p>&gt;</p>
 					</NavigationItem>
 				</ul>
-				<button className={clsx(classes.burgerMenu, showLinks ? classes.showNav2 : classes.hideNav2)} onClick={handleShowLinks}>
+				<button className={clsx(classes.burgerMenu, props.showLinks ? classes.showNav2 : classes.hideNav2)} onClick={handleShowLinks}>
 					<div className={classes.burgerMenuBar1}></div>
 					<div className={classes.burgerMenuBar2}></div>
 					<div className={classes.burgerMenuBar3}></div>
