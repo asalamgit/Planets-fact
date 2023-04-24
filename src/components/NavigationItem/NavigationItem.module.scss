@@ -60,7 +60,7 @@ li {
 		}
 	}
 	.actualVenus {
-		border-top: 7px solid  var(--venusColor);
+		border-top: 7px solid var(--venusColor);
 	}
 	.Earth {
 		&:hover {
@@ -75,12 +75,12 @@ li {
 	.Mars {
 		&:hover {
 			&::after {
-				background-color:  var(--marsColor);
+				background-color: var(--marsColor);
 			}
 		}
 	}
 	.actualMars {
-		border-top: 7px solid  var(--marsColor);
+		border-top: 7px solid var(--marsColor);
 	}
 	.Jupiter {
 		&:hover {
@@ -124,7 +124,6 @@ li {
 	}
 }
 @media screen and (min-width: 651px) and (max-width: 915px) {
-
 	li {
 		margin-right: 1vw;
 		padding-bottom: 40px;
@@ -132,7 +131,7 @@ li {
 		position: relative;
 		margin-left: 10px;
 		margin-right: 10px;
-	
+
 		a {
 			padding-top: 20px;
 			padding-bottom: 21.5px;
@@ -140,7 +139,7 @@ li {
 			text-align: center;
 			border-bottom: 2px solid transparent;
 			position: relative;
-	
+
 			&:before {
 				content: '';
 				position: absolute;
@@ -150,15 +149,14 @@ li {
 				width: 0%;
 				height: 7px;
 				transition: width 0.3s ease-in-out;
-				
 			}
-	
+
 			&:hover:before {
 				width: 100%;
 			}
 		}
 	}
-	
+
 	.Mercury {
 		&:hover:before {
 			background-color: var(--mercuryColor);
@@ -236,6 +234,9 @@ li {
 					color: rgba(255, 255, 255, 1);
 				}
 			}
+		}
+		&:last-child {
+			margin-bottom: 100px;
 		}
 	}
 }

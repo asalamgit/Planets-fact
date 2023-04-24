@@ -35,7 +35,7 @@ function NavigationItem(props) {
 	}
 
 	return (
-		<li className={NavigationItem}>
+		<li>
 			<Link className={clsx(classes.Link, whichPlanet(props.planet), ftIsActualPlanet(props.planet))} onClick={props.onSomeEvent} to={props.to}>
 				{props.children}
 			</Link>

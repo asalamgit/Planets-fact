@@ -1,21 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import classes from './Navigation.module.scss';
-import { useState } from 'react';
-import clsx from 'clsx';
-import imgMercury from '../../../assets/planet-mercury.svg';
-import imgVenus from '../../../assets/planet-venus.svg';
-import imgEarth from '../../../assets/planet-earth.svg';
-import imgMars from '../../../assets/planet-mars.svg';
-import imgJupiter from '../../../assets/planet-jupiter.svg';
-import imgSaturn from '../../../assets/planet-saturn.svg';
-import imgUranus from '../../../assets/planet-uranus.svg';
-import imgNeptune from '../../../assets/planet-neptune.svg';
+import clsx from 'clsx'
+import imgMercury from '../../assets/planet-mercury.svg';
+import imgVenus from '../../assets/planet-venus.svg';
+import imgEarth from '../../assets/planet-earth.svg';
+import imgMars from '../../assets/planet-mars.svg';
+import imgJupiter from '../../assets/planet-jupiter.svg';
+import imgSaturn from '../../assets/planet-saturn.svg';
+import imgUranus from '../../assets/planet-uranus.svg';
+import imgNeptune from '../../assets/planet-neptune.svg';
 import $ from 'jquery';
-import NavigationItem from './NavigationItem/NavigationItem.jsx';
+import NavigationItem from '../NavigationItem/NavigationItem.jsx';
 
 function Navigation(props) {
-	// const [showLinks, setShowLinks] = useState(false);
 
 	const handleShowLinks = () => {
 		props.setShowLinks(!props.showLinks);

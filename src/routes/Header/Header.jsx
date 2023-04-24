@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Header.module.scss';
-import Navigation from './Navigation/Navigation';
+import Navigation from '../../components/Navigation/Navigation';
 import { Link, Outlet } from 'react-router-dom';
 
 function Header() {

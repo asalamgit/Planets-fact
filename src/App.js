@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Header from './routes/Header/Header';
 import Mercury from './routes/Mercury/Mercury';
@@ -10,6 +10,7 @@ import Saturn from './routes/Saturn/Saturn';
 import Uranus from './routes/Uranus/Uranus';
 import Neptune from './routes/Neptune/Neptune';
 import SolarSystem from './routes/SolarSystem/SolarSystem';
+import NotFound from './routes/NotFound/NotFound';
 
 function App() {
 	return (
@@ -24,7 +25,7 @@ function App() {
 				<Route path="saturn" element={<Saturn />} />
 				<Route path="uranus" element={<Uranus />} />
 				<Route path="neptune" element={<Neptune />} />
-				<Route path="*" element={<h2 style={{ textAlign: 'center', width: '100vw', color: 'white', marginTop: '100px' }}>404 not found</h2>} />
+				<Route path="*" element={<NotFound/>} />
 			</Route>
 		</Routes>
 	);
