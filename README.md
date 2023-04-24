@@ -18,7 +18,7 @@ Ce site présente les planètes du système solaire et inclut une animation du s
 
 ## Aperçu
 
-![](./apercu.gif)
+![Système Solaire Preview](./apercu.png)
 
 ## Accès au site
 
