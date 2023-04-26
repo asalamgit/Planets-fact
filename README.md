@@ -1,4 +1,4 @@
-# Système Solaire
+# Planets fact
 
 Ce site présente les planètes du système solaire et inclut une animation du système solaire. Il a été créé à l'aide de React et SCSS.
 
@@ -24,4 +24,3 @@ Ce site présente les planètes du système solaire et inclut une animation du s
 
 Le site est actuellement hébergé sur [https://spiffy-rabanadas-7af408.netlify.app/](https://spiffy-rabanadas-7af408.netlify.app/), où vous pouvez voir une version en direct du site.
 
-N'hésitez pas à explorer les différentes planètes et à observer l'animation du système solaire. Si vous avez des commentaires ou des suggestions, veuillez ouvrir une issue dans ce dépôt.
