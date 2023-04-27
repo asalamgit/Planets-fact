@@ -22,5 +22,4 @@ Ce site présente les planètes du système solaire et inclut une animation du s
 
 ## Accès au site
 
-Le site est actuellement hébergé sur [https://spiffy-rabanadas-7af408.netlify.app/](https://spiffy-rabanadas-7af408.netlify.app/), où vous pouvez voir une version en direct du site.
-
+Le site est actuellement hébergé sur [https://spiffy-rabanadas-7af408.netlify.app/](https://spiffy-rabanadas-7af408.netlify.app/).
