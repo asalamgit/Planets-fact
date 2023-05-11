@@ -1,6 +1,6 @@
 # Planets fact
 
-Ce site présente les planètes du système solaire et inclut une animation du système solaire. Il a été créé à l'aide de React et SCSS.
+Ce site présente les planètes du système solaire et inclut une animation du système solaire. Il a été créé à l'aide de React et SCSS. 
 
 ## Fonctionnalités
 
@@ -22,4 +22,4 @@ Ce site présente les planètes du système solaire et inclut une animation du s
 
 ## Accès au site
 
-Le site est actuellement hébergé sur [https://spiffy-rabanadas-7af408.netlify.app/](https://spiffy-rabanadas-7af408.netlify.app/).
+Le site est actuellement hébergé sur [planetsfact2.netlify.app](planetsfact2.netlify.app/).
