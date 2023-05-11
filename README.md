@@ -21,5 +21,5 @@ Le site est actuellement hébergé sur [https://planetsfact2.netlify.app/](https
 
 ## Aperçu
 
-![Système Solaire Preview](./apercu.png)
+![Système Solaire Preview](./src/assets/apercu.png)
 
